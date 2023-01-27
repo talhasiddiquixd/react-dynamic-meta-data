@@ -24,7 +24,6 @@ const ScoopRank = () => {
   return (
     <>
       <Helmet>
-        <meta charSet='utf-8' />
         <title>{data.title}</title>
         <meta
           name='description'
