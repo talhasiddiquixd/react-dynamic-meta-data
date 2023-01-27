@@ -18,13 +18,14 @@ const ScoopRank = () => {
       val = false;
     }
   }, []);
+
   const link =
     'http://https://63bd-39-53-106-137.in.ngrok.io/scooprank:3000/ScoopRank/';
   return (
     <>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>React app</title>
+        <title>{data.title}</title>
         <meta
           name='description'
           content='React application'
