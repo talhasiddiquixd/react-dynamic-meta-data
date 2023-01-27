@@ -28,10 +28,10 @@ const ScoopRank = () => {
           <meta charSet='utf-8' />
 
           <meta
-            name={data?.title}
+            name='description'
             content={data?.body}
           />
-          <title>"{data?.title}"</title>
+          <title>{data?.title}</title>
           <link
             rel='canonical'
             href={link}
