@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 
 // import { Row } from 'antd';
+var zam;
 const ScoopRank = () => {
   const [data, setData] = useState([]);
   const headers = {};
@@ -14,17 +15,19 @@ const ScoopRank = () => {
       axios.get(baseURL, {}).then((response) => {
         setData(response.data);
       });
+      zam = document.getElementById('titles');
 
       val = false;
     }
   }, []);
-
   const link =
     'http://https://63bd-39-53-106-137.in.ngrok.io/scooprank:3000/ScoopRank/';
   return (
     <>
       <Helmet>
-        <title>{data.title}</title>
+        <meta charSet='utf-8' />
+        <title>React app</title>
+        zam.name.innerHtml={data.title}
         <meta
           name='description'
           content='React application'
