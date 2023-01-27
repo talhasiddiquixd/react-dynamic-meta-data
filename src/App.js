@@ -28,11 +28,10 @@ const ScoopRank = () => {
           <meta charSet='utf-8' />
 
           <meta
-            name={data?.title}
-            content={data?.body}
-            image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNPKubvc49DDL6siEuD8nk_01eLY38gpieXjJ14mETw&s'
+            name='{data?.title}'
+            content='{data?.body}'
           />
-          <title>{data?.title}</title>
+          <title>"{data?.title}"</title>
           <link
             rel='canonical'
             href={link}
