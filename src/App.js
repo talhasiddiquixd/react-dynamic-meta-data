@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import axios from 'axios';
 
 // import { Row } from 'antd';
@@ -41,22 +41,18 @@ const ScoopRank = () => {
     //     <h1>{data?.body}</h1>
     //   </div>
     // </div>
-
-    <HelmetProvider>
+    <>
       <Helmet>
-        <title>Buy Me A Car</title>
-        <link
-          rel='canonical'
-          href='https://www.tacobell.com/'
-        />
+        <meta charSet='utf-8' />
+        <title>React app</title>
         <meta
-          name='Hello there'
-          content='sdbjhklm '
+          name='description'
+          content='React application'
         />
       </Helmet>
       <h1>{data.title}</h1>
       <h1>{data.body}</h1>
-    </HelmetProvider>
+    </>
   );
 };
 export default ScoopRank;
